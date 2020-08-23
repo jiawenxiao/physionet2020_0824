@@ -69,6 +69,7 @@ def run_12ECG_classifier(data, header_data, model):
 
     feats_reshape = torch.tensor(feats_reshape, dtype=torch.float, device=device)
     feats_external = torch.tensor(feats_external, dtype=torch.float, device=device)
+    model.eval()
 
     pred = model.forward(feats_reshape, feats_external)
     pred = torch.sigmoid(pred)

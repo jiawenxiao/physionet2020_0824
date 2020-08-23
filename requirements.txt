@@ -1,0 +1,8 @@
+joblib==0.13.2
+Cython
+numpy
+scipy
+pandas
+scikit-learn
+torch
+torchvision
